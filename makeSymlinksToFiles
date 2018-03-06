@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ ! -e symlinksToFiles ]; then
+  mkdir symlinksToFiles
+else
+  echo "Folder `symlinksToFiles` already exist"
+  exit 1
+fi
+
+cd symlinksToFiles
+ln -s ./../origins/* .
+cd - > /dev/null
