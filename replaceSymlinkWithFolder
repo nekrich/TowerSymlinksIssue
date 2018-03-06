@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -e notOrigins ]; then
+  rm -rf notOrigins
+fi
+
+cp -r origins notOrigins
