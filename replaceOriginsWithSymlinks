@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm notOrigins/*
+
+cd notOrigins
+ln -s ./../origins/* .
+cd - > /dev/null
