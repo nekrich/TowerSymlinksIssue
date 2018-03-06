@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ ! -e origins ]; then
+  mkdir origins
+fi
+
+for i in {1..5}; do
+  filename="origins/file${i}"
+  if [ ! -e $filename ]; then
+    echo "File #${i}" >> $filename
+  fi
+done
